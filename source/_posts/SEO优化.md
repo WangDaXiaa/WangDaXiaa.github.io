@@ -6,7 +6,7 @@ date: 2019-04-19 14:46:12
 
 
 
-### 1. META标签优化：入TITLE，keywords，description
+### 1. META标签优化：例如TITLE，keywords，description
 
 
 
@@ -31,6 +31,8 @@ date: 2019-04-19 14:46:12
 
 
 ### 3. 外链选择：与一些和你网站相关性比较高，整体质量比较好的网站交换友情链接，巩固稳定关键词排名
+
+<!--more-->
 
 
 
