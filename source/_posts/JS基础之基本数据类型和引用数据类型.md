@@ -42,16 +42,12 @@ console.log(obj2.name);//猪八戒
 
 ###### 接下来我用两张图来解释一下
 
-![变量保存到栈内存中](D:\blogBuild\myblog\source\images\1.png)
+{% asset_img 1.png  %}
+
+{% asset_img 2.png  %}
+
+{% asset_img 3.png  %}
 
 
 
 
-
-![对象保存到堆内存中](D:\blogBuild\myblog\source\images\2.png)
-
-![3](D:\blogBuild\myblog\source\images\3.png)
-
-
-
- 

@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 汪大侠的博客
-subtitle: Wang DaXia's Essays
+title: Wang DaXia's Essays
+subtitle: 渴望自由像是治不好的病      理由太多没有人会信      吾只需要自己静一静      这趟远行会在哪里停
 description: 汪大侠是真的好美啊！！！！
 keywords:
 author: 汪大侠
@@ -38,7 +38,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
