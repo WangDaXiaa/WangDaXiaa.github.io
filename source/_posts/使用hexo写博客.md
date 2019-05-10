@@ -4,7 +4,7 @@ copyright: true
 date: 2019-05-05 18:02:50
 tags: 
 - hexo
-categories: hexo
+categories: Hexo
 ---
 
 Hexo的项目结构是在网站根目录的source/_posts目录下存放你的博客文档，以md.文档格式存储，默认存在一个hello-world.md文章，下面我来记录一下怎么使用hexo写博客。
