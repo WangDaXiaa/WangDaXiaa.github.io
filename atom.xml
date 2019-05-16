@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wangdaxiaa.github.io/"/>
-  <updated>2019-05-07T03:11:36.456Z</updated>
+  <updated>2019-05-16T08:22:11.364Z</updated>
   <id>http://wangdaxiaa.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从零开始搭建一个Vue项目</title>
+    <link href="http://wangdaxiaa.github.io/2019/05/16/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAVue%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://wangdaxiaa.github.io/2019/05/16/从零开始搭建一个Vue项目/</id>
+    <published>2019-05-16T08:06:39.000Z</published>
+    <updated>2019-05-16T08:22:11.364Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近换了一家新公司工作，同事告诉我前端项目用的是Vue框架，鉴于之前已经有了一点点的React项目经验，所以，也大概知道怎么去学习这个新的前端框架，下面我将记录一下怎么从零开始搭建一个Vue项目（之前刚开始学习react的时候走了不少弯路，当时带我的师傅也只是跟我说用react+antd做一个小demo出来，所以这次学习vue也有了自己的一点方法）。</p><a id="more"></a><h5 id="电脑环境准备"><a href="#电脑环境准备" class="headerlink" title="电脑环境准备"></a>电脑环境准备</h5><p>进入nodeJS官网下载你的电脑对应的安装包：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p><img src="/2019/05/16/从零开始搭建一个Vue项目/1.png"><p>这两个安装包的区别就是，第一个点击下载之后可以直接安装，第二个需要解压之后才能安装。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近换了一家新公司工作，同事告诉我前端项目用的是Vue框架，鉴于之前已经有了一点点的React项目经验，所以，也大概知道怎么去学习这个新的前端框架，下面我将记录一下怎么从零开始搭建一个Vue项目（之前刚开始学习react的时候走了不少弯路，当时带我的师傅也只是跟我说用react+antd做一个小demo出来，所以这次学习vue也有了自己的一点方法）。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Vue" scheme="http://wangdaxiaa.github.io/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="http://wangdaxiaa.github.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>JS基础之数据类型转换</title>
