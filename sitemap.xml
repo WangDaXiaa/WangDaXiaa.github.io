@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wangdaxiaa.github.io/2019/05/05/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2/</loc>
+    
+    <lastmod>2019-05-23T06:26:24.677Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wangdaxiaa.github.io/2019/05/23/Vue%E4%B9%8Bv-if%E5%92%8Cv-show%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     
-    <lastmod>2019-05-23T03:46:55.638Z</lastmod>
+    <lastmod>2019-05-23T03:50:47.821Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>http://wangdaxiaa.github.io/about/index.html</loc>
     
     <lastmod>2019-05-23T03:13:41.471Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangdaxiaa.github.io/2019/05/05/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2019-05-23T03:13:41.468Z</lastmod>
     
   </url>
   

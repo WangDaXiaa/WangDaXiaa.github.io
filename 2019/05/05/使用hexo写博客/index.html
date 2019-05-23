@@ -130,7 +130,7 @@
 <meta property="og:site_name" content="Wang DaXia&#39;s Essays">
 <meta property="og:description" content="Hexo的项目结构是在网站根目录的source/_posts目录下存放你的博客文档，以md.文档格式存储，默认存在一个hello-world.md文章，下面我来记录一下怎么使用hexo写博客。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-23T03:13:41.468Z">
+<meta property="og:updated_time" content="2019-05-23T06:26:24.677Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo写博客">
 <meta name="twitter:description" content="Hexo的项目结构是在网站根目录的source/_posts目录下存放你的博客文档，以md.文档格式存储，默认存在一个hello-world.md文章，下面我来记录一下怎么使用hexo写博客。">
@@ -399,7 +399,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  865
+                  1.1k
                 </span>
               
 
@@ -459,6 +459,14 @@
 <p>上面的是Markdown的引用方式，图片只能在文章中显示，但无法在首页中正常显示，如果希望图片在文章和首页中同时显示，可以使用标签插件语法：</p>
 <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img <span class="built_in">image</span>.jpg <span class="keyword">this</span> is an <span class="built_in">image</span> %&#125;</span><br></pre></td></tr></table></figure>
 <p>这样图片就会在文章和首页中同时显示了。</p>
+<h5 id="插入动图"><a href="#插入动图" class="headerlink" title="插入动图"></a>插入动图</h5><p>在文章中插入gif动画的方法和插入图片类似，只不过动画的插入不是使用markdown自带的标签，而是hexo特有的标签插件：<code>iframe</code> ，插入过程如下：</p>
+<p>1.制作gif动画</p>
+<p>   我用的是ScreenToGif，这是个非常小的应用程序，下载路径：<a href="https://www.screentogif.com/?l=zh_cn" target="_blank" rel="noopener">https://www.screentogif.com/?l=zh_cn</a>   安装好就可以直接用</p>
+<p>2.在hexo主目录的source文件夹下新建<code>iframe</code>文件夹，讲上面录制的gif图放到该目录</p>
+<p>3.用hexo标签插件<code>iframe</code>在文章中引入上面制作的gif动画，引入方式如下：</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-variable">&#123;% iframe url [width] [height] %&#125;</span>   <span class="comment">#语法格式，不指定宽度和高度则使用默认大小</span></span><br><span class="line"><span class="template-variable">&#123;% iframe /iframe/Toggle.gif %&#125;</span>     <span class="comment">#示例</span></span><br></pre></td></tr></table></figure>
+<p>4.效果如下</p>
+<iframe src="/iframe/Toggle.gif" width="100%" height="300" frameborder="0" allowfullscreen></iframe> 
 <p>文章到此就结束了，参考文档见<a href="https://lfkid.github.io/2016/11/16/Hexo%E6%95%99%E7%A8%8B%EF%BC%9A%EF%BC%88%E4%B8%89%EF%BC%89%E4%BD%BF%E7%94%A8Hexo%E5%86%99%E5%8D%9A%E5%AE%A2/，谢谢大佬！" target="_blank" rel="noopener">https://lfkid.github.io/2016/11/16/Hexo%E6%95%99%E7%A8%8B%EF%BC%9A%EF%BC%88%E4%B8%89%EF%BC%89%E4%BD%BF%E7%94%A8Hexo%E5%86%99%E5%8D%9A%E5%AE%A2/，谢谢大佬！</a></p>
 
       
@@ -479,7 +487,7 @@
   <p><span>本文标题:</span><a href="/2019/05/05/使用hexo写博客/">使用hexo写博客</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 汪大侠 的个人博客">汪大侠</a></p>
   <p><span>发布时间:</span>2019年05月05日 - 18:05</p>
-  <p><span>最后更新:</span>2019年05月23日 - 11:05</p>
+  <p><span>最后更新:</span>2019年05月23日 - 14:05</p>
   <p><span>原始链接:</span><a href="/2019/05/05/使用hexo写博客/" title="使用hexo写博客">http://wangdaxiaa.github.io/2019/05/05/使用hexo写博客/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wangdaxiaa.github.io/2019/05/05/使用hexo写博客/" aria-label="复制成功！"></i></span>
   </p>
@@ -701,7 +709,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#新建文档"><span class="nav-number">1.</span> <span class="nav-text">新建文档</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文档格式"><span class="nav-number">2.</span> <span class="nav-text">文档格式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文章分类"><span class="nav-number">3.</span> <span class="nav-text">文章分类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#插入图片"><span class="nav-number">4.</span> <span class="nav-text">插入图片</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#新建文档"><span class="nav-number">1.</span> <span class="nav-text">新建文档</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文档格式"><span class="nav-number">2.</span> <span class="nav-text">文档格式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文章分类"><span class="nav-number">3.</span> <span class="nav-text">文章分类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#插入图片"><span class="nav-number">4.</span> <span class="nav-text">插入图片</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#插入动图"><span class="nav-number">5.</span> <span class="nav-text">插入动图</span></a></li></ol></div>
             
 
           </div>
@@ -736,7 +744,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.6k</span>
+    <span title="Site words total count">3.8k</span>
   
 </div>
 
