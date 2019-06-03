@@ -89,9 +89,36 @@ post_asset_folder: true
 
 这样图片就会在文章和首页中同时显示了。
 
+##### 插入动图
+
+在文章中插入gif动画的方法和插入图片类似，只不过动画的插入不是使用markdown自带的标签，而是hexo特有的标签插件：`iframe` ，插入过程如下：
+
+1.制作gif动画
+
+   我用的是ScreenToGif，这是个非常小的应用程序，下载路径：<https://www.screentogif.com/?l=zh_cn>   安装好就可以直接用
+
+2.在hexo主目录的source文件夹下新建`iframe`文件夹，讲上面录制的gif图放到该目录
+
+3.用hexo标签插件`iframe`在文章中引入上面制作的gif动画，引入方式如下：
+
+```
+{% iframe url [width] [height] %}   #语法格式，不指定宽度和高度则使用默认大小
+{% iframe /iframe/Toggle.gif %}     #示例
+```
+
+4.效果如下
+
+{% iframe /iframe/Toggle.gif %} 
 
 
 
 
-文章到此就结束了，参考文档见https://lfkid.github.io/2016/11/16/Hexo%E6%95%99%E7%A8%8B%EF%BC%9A%EF%BC%88%E4%B8%89%EF%BC%89%E4%BD%BF%E7%94%A8Hexo%E5%86%99%E5%8D%9A%E5%AE%A2/，谢谢大佬！
+
+
+
+文章到此就结束了，参考文档见：
+
+https://lfkid.github.io/2016/11/16/Hexo%E6%95%99%E7%A8%8B%EF%BC%9A%EF%BC%88%E4%B8%89%EF%BC%89%E4%BD%BF%E7%94%A8Hexo%E5%86%99%E5%8D%9A%E5%AE%A2/
+
+谢谢大家！
 
