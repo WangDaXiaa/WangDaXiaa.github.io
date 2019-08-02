@@ -109,7 +109,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="JavaScript,逻辑运算符,">
 
 
 
@@ -122,17 +122,18 @@
 
 
 
-<meta name="description" content="一、内部优化  META标签优化：例如TITLE，keywords，description 内部链接的优化：相关性链接（Tag标签），锚文本标签，各导航链接，及图片链接 网站内容更新：每天保持站内的更新（主要是文章的更新等）  二、外部优化  外部链接的类别：友情链接，博客，论坛，新闻，贴吧，相关信息网等，尽量保持链接的多样性 外链运营：每天添加一定数量的外部链接，使关键词排名稳定上升 外链选择：">
+<meta name="description" content="本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;amp;&amp;amp;”（逻辑与） “||”（逻辑或）从字面上来说，逻辑或只有在前后都是false的时候才返回false，否则返回true，如下： 1234alert(true || false);   //truealert(false || true);   //truealert(true || true);    //truealert(f">
+<meta name="keywords" content="JavaScript,逻辑运算符">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SEO优化">
-<meta property="og:url" content="http://wangdaxiaa.github.io/2019/04/19/SEO优化/index.html">
+<meta property="og:title" content="JS基础之逻辑运运算符“||”和“&amp;&amp;”">
+<meta property="og:url" content="http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/index.html">
 <meta property="og:site_name" content="Wang DaXia&#39;s Essays">
-<meta property="og:description" content="一、内部优化  META标签优化：例如TITLE，keywords，description 内部链接的优化：相关性链接（Tag标签），锚文本标签，各导航链接，及图片链接 网站内容更新：每天保持站内的更新（主要是文章的更新等）  二、外部优化  外部链接的类别：友情链接，博客，论坛，新闻，贴吧，相关信息网等，尽量保持链接的多样性 外链运营：每天添加一定数量的外部链接，使关键词排名稳定上升 外链选择：">
+<meta property="og:description" content="本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;amp;&amp;amp;”（逻辑与） “||”（逻辑或）从字面上来说，逻辑或只有在前后都是false的时候才返回false，否则返回true，如下： 1234alert(true || false);   //truealert(false || true);   //truealert(true || true);    //truealert(f">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-03T08:48:51.087Z">
+<meta property="og:updated_time" content="2019-08-02T07:24:34.353Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SEO优化">
-<meta name="twitter:description" content="一、内部优化  META标签优化：例如TITLE，keywords，description 内部链接的优化：相关性链接（Tag标签），锚文本标签，各导航链接，及图片链接 网站内容更新：每天保持站内的更新（主要是文章的更新等）  二、外部优化  外部链接的类别：友情链接，博客，论坛，新闻，贴吧，相关信息网等，尽量保持链接的多样性 外链运营：每天添加一定数量的外部链接，使关键词排名稳定上升 外链选择：">
+<meta name="twitter:title" content="JS基础之逻辑运运算符“||”和“&amp;&amp;”">
+<meta name="twitter:description" content="本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;amp;&amp;amp;”（逻辑与） “||”（逻辑或）从字面上来说，逻辑或只有在前后都是false的时候才返回false，否则返回true，如下： 1234alert(true || false);   //truealert(false || true);   //truealert(true || true);    //truealert(f">
 
 
 
@@ -162,13 +163,13 @@
 
 
 
-  <link rel="canonical" href="http://wangdaxiaa.github.io/2019/04/19/SEO优化/">
+  <link rel="canonical" href="http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/">
 
 
 
 
 
-  <title>SEO优化 | Wang DaXia's Essays</title>
+  <title>JS基础之逻辑运运算符“||”和“&&” | Wang DaXia's Essays</title>
   
 
 
@@ -305,7 +306,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wangdaxiaa.github.io/2019/04/19/SEO优化/">
+    <link itemprop="mainEntityOfPage" href="http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="汪大侠">
@@ -322,7 +323,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">SEO优化</h2>
+          <h2 class="post-title" itemprop="name headline">JS基础之逻辑运运算符“||”和“&&”</h2>
         
 
         <div class="post-meta">
@@ -334,8 +335,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-19T14:46:12+08:00">
-                2019-04-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-02T11:48:42+08:00">
+                2019-08-02
               </time>
             
 
@@ -345,6 +346,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JS基础/" itemprop="url" rel="index">
+                    <span itemprop="name">JS基础</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -353,8 +376,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/04/19/SEO优化/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/19/SEO优化/" itemprop="commentCount"></span>
+                <a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -376,7 +399,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  178
+                  345
                 </span>
               
 
@@ -413,20 +436,19 @@
       
 
       
-        <p>一、内部优化</p>
-<ol>
-<li>META标签优化：例如TITLE，keywords，description</li>
-<li>内部链接的优化：相关性链接（Tag标签），锚文本标签，各导航链接，及图片链接</li>
-<li>网站内容更新：每天保持站内的更新（主要是文章的更新等）</li>
-</ol>
-<p>二、外部优化</p>
-<ol>
-<li>外部链接的类别：友情链接，博客，论坛，新闻，贴吧，相关信息网等，尽量保持链接的多样性</li>
-<li>外链运营：每天添加一定数量的外部链接，使关键词排名稳定上升</li>
-<li>外链选择：与一些和你网站相关性比较高，整体质量比较好的网站交换友情链接，巩固稳定关键词排名</li>
-</ol>
-<a id="more"></a>
-
+        <p> 本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;&amp;”（逻辑与）</p>
+<h5 id="“-”（逻辑或）"><a href="#“-”（逻辑或）" class="headerlink" title="“||”（逻辑或）"></a>“||”（逻辑或）</h5><p>从字面上来说，逻辑或只有在前后都是<code>false</code>的时候才返回<code>false</code>，否则返回<code>true</code>，如下：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="literal">true</span> <span class="params">||</span> <span class="literal">false</span>);   <span class="regexp">//true</span></span><br><span class="line">alert(<span class="literal">false</span> <span class="params">||</span> <span class="literal">true</span>);   <span class="regexp">//true</span></span><br><span class="line">alert(<span class="literal">true</span> <span class="params">||</span> <span class="literal">true</span>);    <span class="regexp">//true</span></span><br><span class="line">alert(<span class="literal">false</span> <span class="params">||</span> <span class="literal">false</span>);   <span class="regexp">//false</span></span><br></pre></td></tr></table></figure>
+<p>但是，从深层意义上来说的话，却有另一番天地，看下面的代码：</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert( <span class="number">0</span> || <span class="number">1</span>);    <span class="comment">//   1</span></span><br></pre></td></tr></table></figure>
+<p>显然我们知道前面<code>0</code>意味着<code>false</code>，后面的<code>1</code>意味着<code>true</code>，那么上面的结果应该是<code>true</code>，而事实返回的结果是<code>1</code>，在看下面代码：</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert( <span class="number">2</span> || <span class="number">1</span>);    <span class="comment">//   2</span></span><br></pre></td></tr></table></figure>
+<p>我们知道，前面<code>2</code>是<code>true</code>，后面<code>1</code>也是<code>true</code>，那么返回结果是啥呢，事实上返回结果是<code>2</code>，继续看如下代码：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert( <span class="string">'a'</span> <span class="params">||</span> <span class="number">1</span>);   <span class="regexp">//</span> <span class="string">'a'</span></span><br></pre></td></tr></table></figure>
+<p>同样的，前面<code>a</code>是<code>true</code>，后面<code>1</code>也是<code>true</code>，结果是<code>&#39;a&#39;</code>，接着看如下代码：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">alert( <span class="string">''</span> <span class="params">||</span> <span class="number">1</span> ); <span class="regexp">//</span>前面<span class="string">''</span>为<span class="literal">false</span>，后面<span class="number">1</span>位<span class="literal">true</span>，返回结果为<span class="number">1</span></span><br><span class="line">alert( <span class="string">'a'</span> <span class="params">||</span> <span class="number">0</span>); <span class="regexp">//</span>前面<span class="string">'a'</span>为<span class="literal">true</span>，后面<span class="number">0</span>位<span class="literal">false</span>，返回结果为<span class="string">'a'</span></span><br><span class="line">alert( <span class="string">'a'</span> <span class="params">||</span> <span class="string">'b'</span>); <span class="regexp">//</span>前面<span class="string">'a'</span>为<span class="literal">true</span>，后面<span class="string">'b'</span>为<span class="literal">true</span>，返回结果为<span class="string">'a'</span></span><br><span class="line">alert( <span class="string">''</span> <span class="params">||</span> <span class="number">0</span>); <span class="regexp">//</span>前面<span class="string">''</span>为<span class="literal">false</span>，后面<span class="number">0</span>为<span class="literal">false</span>，返回结果为<span class="number">0</span></span><br><span class="line">alert( <span class="number">0</span> <span class="params">||</span> <span class="string">''</span>); <span class="regexp">//</span>前面<span class="number">0</span>为<span class="literal">false</span>，后面<span class="string">''</span>为<span class="literal">false</span>，返回结果为<span class="string">''</span></span><br></pre></td></tr></table></figure>
+<p>由此可知：</p>
+<h5 id="1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；"><a href="#1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；" class="headerlink" title="1、只要 ||前面为false，不管||后面是true还是false，都返回||后 面的值；"></a>1、只要 <code>||</code>前面为<code>false</code>，不管<code>||</code>后面是<code>true</code>还是<code>false</code>，都返回<code>||</code><strong><em>后</em></strong> 面的值；</h5><h5 id="2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值；"><a href="#2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值；" class="headerlink" title="2、只要 ||前面为true，不管||后面是true还是false，都返回||前 面的值；"></a>2、只要 <code>||</code>前面为<code>true</code>，不管<code>||</code>后面是<code>true</code>还是<code>false</code>，都返回<code>||</code><em>前</em> 面的值；</h5>
       
     </div>
     
@@ -436,6 +458,35 @@
 	<div>
       
         
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/">JS基础之逻辑运运算符“||”和“&&”</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 汪大侠 的个人博客">汪大侠</a></p>
+  <p><span>发布时间:</span>2019年08月02日 - 11:08</p>
+  <p><span>最后更新:</span>2019年08月02日 - 15:08</p>
+  <p><span>原始链接:</span><a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" title="JS基础之逻辑运运算符“||”和“&&”">http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
+
 
       
     </div>
@@ -458,6 +509,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/逻辑运算符/" rel="tag"># 逻辑运算符</a>
+          
+        </div>
+      
 
       
       
@@ -467,15 +526,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/07/15/HTML-css基础随笔一/" rel="next" title="HTML & css基础随笔一">
+                <i class="fa fa-chevron-left"></i> HTML & css基础随笔一
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/23/new-react/" rel="prev" title="从零开始搭建一个自己的React项目">
-                从零开始搭建一个自己的React项目 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -530,8 +589,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -609,6 +677,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#“-”（逻辑或）"><span class="nav-number">1.</span> <span class="nav-text">“||”（逻辑或）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；"><span class="nav-number">2.</span> <span class="nav-text">1、只要 ||前面为false，不管||后面是true还是false，都返回||后 面的值；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值；"><span class="nav-number">3.</span> <span class="nav-text">2、只要 ||前面为true，不管||后面是true还是false，都返回||前 面的值；</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
