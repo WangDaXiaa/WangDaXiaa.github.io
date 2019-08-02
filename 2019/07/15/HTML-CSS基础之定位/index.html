@@ -109,7 +109,7 @@
 
 
 
-  <meta name="keywords" content="JavaScript,逻辑运算符,">
+  <meta name="keywords" content="HTML,CSS,">
 
 
 
@@ -122,18 +122,18 @@
 
 
 
-<meta name="description" content="本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;amp;&amp;amp;”（逻辑与）">
-<meta name="keywords" content="JavaScript,逻辑运算符">
+<meta name="description" content="本篇文章要说的是关于定位属性的具体理解，在介绍定位之前，有必要先了解下文档流。">
+<meta name="keywords" content="HTML,CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS基础之逻辑运运算符“||”和“&amp;&amp;”">
-<meta property="og:url" content="http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/index.html">
+<meta property="og:title" content="HTML&amp;CSS基础之定位">
+<meta property="og:url" content="http://wangdaxiaa.github.io/2019/07/15/HTML-CSS基础之定位/index.html">
 <meta property="og:site_name" content="Wang DaXia&#39;s Essays">
-<meta property="og:description" content="本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;amp;&amp;amp;”（逻辑与）">
+<meta property="og:description" content="本篇文章要说的是关于定位属性的具体理解，在介绍定位之前，有必要先了解下文档流。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-02T08:18:04.456Z">
+<meta property="og:updated_time" content="2019-08-02T10:09:29.279Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS基础之逻辑运运算符“||”和“&amp;&amp;”">
-<meta name="twitter:description" content="本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;amp;&amp;amp;”（逻辑与）">
+<meta name="twitter:title" content="HTML&amp;CSS基础之定位">
+<meta name="twitter:description" content="本篇文章要说的是关于定位属性的具体理解，在介绍定位之前，有必要先了解下文档流。">
 
 
 
@@ -163,13 +163,13 @@
 
 
 
-  <link rel="canonical" href="http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/">
+  <link rel="canonical" href="http://wangdaxiaa.github.io/2019/07/15/HTML-CSS基础之定位/">
 
 
 
 
 
-  <title>JS基础之逻辑运运算符“||”和“&&” | Wang DaXia's Essays</title>
+  <title>HTML&CSS基础之定位 | Wang DaXia's Essays</title>
   
 
 
@@ -306,7 +306,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/">
+    <link itemprop="mainEntityOfPage" href="http://wangdaxiaa.github.io/2019/07/15/HTML-CSS基础之定位/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="汪大侠">
@@ -323,7 +323,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">JS基础之逻辑运运算符“||”和“&&”</h2>
+          <h2 class="post-title" itemprop="name headline">HTML&CSS基础之定位</h2>
         
 
         <div class="post-meta">
@@ -335,8 +335,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-02T11:48:42+08:00">
-                2019-08-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-15T17:10:22+08:00">
+                2019-07-15
               </time>
             
 
@@ -358,8 +358,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JS基础/" itemprop="url" rel="index">
-                    <span itemprop="name">JS基础</span>
+                  <a href="/categories/HTML-CSS基础/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML&CSS基础</span>
                   </a>
                 </span>
 
@@ -376,8 +376,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" itemprop="commentCount"></span>
+                <a href="/2019/07/15/HTML-CSS基础之定位/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/15/HTML-CSS基础之定位/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -399,7 +399,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  667
+                  802
                 </span>
               
 
@@ -436,27 +436,40 @@
       
 
       
-        <p> 本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;&amp;”（逻辑与）</p>
+        <p>本篇文章要说的是关于定位属性的具体理解，在介绍定位之前，有必要先了解下文档流。</p>
 <a id="more"></a>
-<h5 id="一、“-”（逻辑或）"><a href="#一、“-”（逻辑或）" class="headerlink" title="一、“||”（逻辑或）"></a>一、“||”（逻辑或）</h5><p>从字面上来说，逻辑或只有在前后都是<code>false</code>的时候才返回<code>false</code>，否则返回<code>true</code>，如下：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.<span class="built_in">log</span>(<span class="literal">true</span> || <span class="literal">false</span>);   <span class="comment">//true</span></span><br><span class="line">console.<span class="built_in">log</span>(<span class="literal">false</span> || <span class="literal">true</span>);   <span class="comment">//true</span></span><br><span class="line">console.<span class="built_in">log</span>(<span class="literal">true</span> || <span class="literal">true</span>);    <span class="comment">//true</span></span><br><span class="line">console.<span class="built_in">log</span>(<span class="literal">false</span> || <span class="literal">false</span>);   <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
-<p>但是，从深层意义上来说的话，却有另一番天地，看下面的代码：</p>
-<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log( <span class="number">0</span> || <span class="number">1</span>);    <span class="comment">//   1</span></span><br></pre></td></tr></table></figure>
-<p>显然我们知道前面<code>0</code>意味着<code>false</code>，后面的<code>1</code>意味着<code>true</code>，那么上面的结果应该是<code>true</code>，而事实返回的结果是<code>1</code>，在看下面代码：</p>
-<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log( <span class="number">2</span> || <span class="number">1</span>);    <span class="comment">//   2</span></span><br></pre></td></tr></table></figure>
-<p>我们知道，前面<code>2</code>是<code>true</code>，后面<code>1</code>也是<code>true</code>，那么返回结果是啥呢，事实上返回结果是<code>2</code>，继续看如下代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.<span class="built_in">log</span>( <span class="string">'a'</span> || <span class="number">1</span>);   <span class="comment">// 'a'</span></span><br></pre></td></tr></table></figure>
-<p>同样的，前面<code>a</code>是<code>true</code>，后面<code>1</code>也是<code>true</code>，结果是<code>&#39;a&#39;</code>，接着看如下代码：</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">console.log( <span class="string">''</span> <span class="params">||</span> <span class="number">1</span> ); <span class="regexp">//</span>前面<span class="string">''</span>为<span class="literal">false</span>，后面<span class="number">1</span>位<span class="literal">true</span>，返回结果为<span class="number">1</span></span><br><span class="line">console.log( <span class="string">'a'</span> <span class="params">||</span> <span class="number">0</span>); <span class="regexp">//</span>前面<span class="string">'a'</span>为<span class="literal">true</span>，后面<span class="number">0</span>位<span class="literal">false</span>，返回结果为<span class="string">'a'</span></span><br><span class="line">console.log( <span class="string">'a'</span> <span class="params">||</span> <span class="string">'b'</span>); <span class="regexp">//</span>前面<span class="string">'a'</span>为<span class="literal">true</span>，后面<span class="string">'b'</span>为<span class="literal">true</span>，返回结果为<span class="string">'a'</span></span><br><span class="line">console.log( <span class="string">''</span> <span class="params">||</span> <span class="number">0</span>); <span class="regexp">//</span>前面<span class="string">''</span>为<span class="literal">false</span>，后面<span class="number">0</span>为<span class="literal">false</span>，返回结果为<span class="number">0</span></span><br><span class="line">console.log( <span class="number">0</span> <span class="params">||</span> <span class="string">''</span>); <span class="regexp">//</span>前面<span class="number">0</span>为<span class="literal">false</span>，后面<span class="string">''</span>为<span class="literal">false</span>，返回结果为<span class="string">''</span></span><br></pre></td></tr></table></figure>
-<p>由此可知：</p>
-<h5 id="1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；"><a href="#1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；" class="headerlink" title="1、只要 ||前面为false，不管||后面是true还是false，都返回||后 面的值；"></a>1、只要 <code>||</code>前面为<code>false</code>，不管<code>||</code>后面是<code>true</code>还是<code>false</code>，都返回<code>||</code><strong><em>后</em></strong> 面的值；</h5><h5 id="2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值。"><a href="#2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值。" class="headerlink" title="2、只要 ||前面为true，不管||后面是true还是false，都返回||前 面的值。"></a>2、只要 <code>||</code>前面为<code>true</code>，不管<code>||</code>后面是<code>true</code>还是<code>false</code>，都返回<code>||</code><em>前</em> 面的值。</h5><hr>
-<h5 id="二、”-amp-amp-“（逻辑与）"><a href="#二、”-amp-amp-“（逻辑与）" class="headerlink" title="二、”&amp;&amp;“（逻辑与）"></a>二、”&amp;&amp;“（逻辑与）</h5><p>从字面上来说，只有前后都是<code>true</code>的时候才返回<code>true</code>，否则返回<code>false</code>，如下：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">console.log(true</span> <span class="string">&amp;&amp;</span> <span class="literal">false</span><span class="string">);</span>  <span class="string">//</span> <span class="literal">false</span></span><br><span class="line"><span class="string">console.log(true</span> <span class="string">&amp;&amp;</span> <span class="literal">true</span><span class="string">);</span>  <span class="string">//</span> <span class="literal">true</span></span><br><span class="line"><span class="string">console.log(false</span> <span class="string">&amp;&amp;</span> <span class="literal">false</span><span class="string">);</span>  <span class="string">//</span> <span class="literal">false</span></span><br><span class="line"><span class="string">console.log(</span> <span class="literal">false</span> <span class="string">&amp;&amp;</span> <span class="literal">true</span> <span class="string">);</span>  <span class="string">//</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p>然后，根据上面的经验，我们看看<code>&amp;&amp;</code>号前后，不单单是布尔类型的情况。如下：</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log( <span class="string">''</span> &amp;&amp; <span class="number">0</span> );  <span class="regexp">//</span>前面<span class="string">''</span>是<span class="literal">false</span>，后面<span class="number">1</span>是<span class="literal">true</span>，返回结果为<span class="string">''</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="string">''</span> &amp;&amp; <span class="number">0</span> );  <span class="regexp">//</span>前面<span class="string">''</span>是<span class="literal">false</span>，后面<span class="number">0</span>是<span class="literal">false</span>，返回结果为<span class="string">''</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="string">'a'</span> &amp;&amp; <span class="number">1</span> );  <span class="regexp">//</span>前面<span class="string">'a'</span><span class="literal">true</span>，后面<span class="number">1</span>是<span class="literal">true</span>，返回结果为<span class="number">1</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="string">'a'</span> &amp;&amp; <span class="number">0</span> );  <span class="regexp">//</span>前面<span class="string">'a'</span>是<span class="literal">true</span>,后面是<span class="number">0</span>是<span class="literal">false</span>，返回结果为<span class="number">0</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="string">'a'</span> &amp;&amp; <span class="string">''</span> );  <span class="regexp">//</span>前面<span class="string">'a'</span>是<span class="literal">true</span>,前面<span class="number">0</span>是<span class="literal">false</span>,返回结果为<span class="string">''</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="number">0</span> &amp;&amp; <span class="string">'a'</span> );  <span class="regexp">//</span>前面<span class="number">0</span>是<span class="literal">false</span>,后面是<span class="string">'a'</span>是<span class="literal">true</span>，返回结果为<span class="number">0</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="number">0</span> &amp;&amp; <span class="string">''</span> );  <span class="regexp">//</span>前面<span class="number">0</span>是<span class="literal">false</span>,前面<span class="number">0</span>是<span class="literal">false</span>,返回结果为<span class="number">0</span></span><br></pre></td></tr></table></figure>
-<p>这意味着：</p>
-<h5 id="1、只要-amp-amp-前面是false，无论后面是true还是false，结果都将返回前-面的值；"><a href="#1、只要-amp-amp-前面是false，无论后面是true还是false，结果都将返回前-面的值；" class="headerlink" title="1、只要&amp;&amp;前面是false，无论后面是true还是false，结果都将返回前 面的值；"></a>1、只要<code>&amp;&amp;</code>前面是<code>false</code>，无论后面是<code>true</code>还是<code>false</code>，结果都将返回<em>前</em> 面的值；</h5><h5 id="2、只要-amp-amp-前面是true，无论后面是true还是false，结果都将返回后-面的值；"><a href="#2、只要-amp-amp-前面是true，无论后面是true还是false，结果都将返回后-面的值；" class="headerlink" title="2、只要&amp;&amp;前面是true，无论后面是true还是false，结果都将返回后 面的值；"></a>2、只要<code>&amp;&amp;</code>前面是<code>true</code>，无论后面是<code>true</code>还是<code>false</code>，结果都将返回<em>后</em> 面的值；</h5><p>本篇笔记到这里就结束了，谢谢阅读！</p>
-<p>参考：<a href="https://www.cnblogs.com/pigtail/archive/2012/03/09/2387486.html" target="_blank" rel="noopener">https://www.cnblogs.com/pigtail/archive/2012/03/09/2387486.html</a></p>
+<h5 id="文档流"><a href="#文档流" class="headerlink" title="文档流"></a>文档流</h5><p>文档流，简单来说就是元素按照其在HTML中的位置顺序决定排布的过程。HTML的布局机制就是用文档流模型的，即块元素（block）独占一行，内联元素（inline）不独占一行，内联元素的元素本身有多大，他就占多大。</p>
+<p>一般使用<code>margin</code>来隔开元素与元素之间的间距，<code>padding</code>是用来隔开元素与内容的间隔。<code>margin</code>用于布局分开元素使元素与元素互不相干；<code>padding</code>用于元素与内容之间的间隔，让内容（文字）与元素（包裹）之间有一段“距离”。</p>
+<p>只要不是float和绝对定位方式布局的，都在文档流里面。</p>
+<h5 id="position属性介绍"><a href="#position属性介绍" class="headerlink" title="position属性介绍"></a>position属性介绍</h5><p>position（定位）：定位指的就是将指定的元素摆放到页面的任意位置，通过定位可以摆放元素</p>
+<p>​        <code>position</code>的可选值有：</p>
+<p>​        ——<code>static</code>：默认值，元素没有开启定位</p>
+<p>​        ——<code>relative</code>：相对定位</p>
+<p>​        ——<code>absolute</code>：绝对定位</p>
+<p>​        ——<code>fixed</code>：固定定位（绝对定位的一种）</p>
+<p><strong>相对定位</strong></p>
+<p>当元素的<code>position</code>属性设置为<code>relative</code>时，则开启了元素的相对定位</p>
+<p>1、当开启了元素的相对定位以后，而不设置偏移量时，元素不会发生任何变化</p>
+<p>​      当开启了元素的定位（<code>position</code>是一个非<code>static</code>的值）时，可以通过<code>left right top bottom</code>来设置元素的偏移量</p>
+<p>2、相对定位是相对于元素在文档流中原来的位置进行定位</p>
+<p>3、相对定位的元素不会脱离文档流</p>
+<p>4、相对定位会使元素提高一个层级</p>
+<p>5、相对定位不会改变元素的性质，块元素还是块元素，内联元素还是内联元素</p>
+<hr>
+<p><strong>绝对定位</strong></p>
+<p>当元素的<code>position</code>属性设置为<code>absolute</code>时，则开启了元素的绝对定位</p>
+<p>1、开启绝对定位，会使元素脱离文档流</p>
+<p>2、开启绝对定位以后，如果不设置偏移量，则元素的位置不会发生变化</p>
+<p>3、绝对定位是相对于离他最近的开启了定位的祖先元素进行定位的，如果所有祖先元素都没有开启定位，则相对于浏览器窗口定位（一般情况下，开启了子元素的绝对定位都会同时开启父元素的相对定位）</p>
+<p>4、绝对定位会使元素提升一个层级</p>
+<p>5、绝对定位会改变元素的性质：内联元素变成块元素，块元素的宽度和高度默认都被内容撑开</p>
+<hr>
+<p><strong>固定定位</strong></p>
+<p>当元素的<code>position</code>属性设置为<code>fixed</code>时，则开启了元素的固定定位，固定定位也是一种绝对定位，它的大部分特点都和绝对定位一样</p>
+<p>不同的是：</p>
+<p>1、固定定位永远都会相对于浏览器窗口定位</p>
+<p>2、固定定位会固定在浏览器窗口某个位置，不会随滚动条滚动</p>
+<p>注意：IE6不支持固定定位</p>
 
       
     </div>
@@ -473,12 +486,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/">JS基础之逻辑运运算符“||”和“&&”</a></p>
+  <p><span>本文标题:</span><a href="/2019/07/15/HTML-CSS基础之定位/">HTML&CSS基础之定位</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 汪大侠 的个人博客">汪大侠</a></p>
-  <p><span>发布时间:</span>2019年08月02日 - 11:08</p>
-  <p><span>最后更新:</span>2019年08月02日 - 16:08</p>
-  <p><span>原始链接:</span><a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" title="JS基础之逻辑运运算符“||”和“&&”">http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年07月15日 - 17:07</p>
+  <p><span>最后更新:</span>2019年08月02日 - 18:08</p>
+  <p><span>原始链接:</span><a href="/2019/07/15/HTML-CSS基础之定位/" title="HTML&CSS基础之定位">http://wangdaxiaa.github.io/2019/07/15/HTML-CSS基础之定位/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wangdaxiaa.github.io/2019/07/15/HTML-CSS基础之定位/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -520,9 +533,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+            <a href="/tags/HTML/" rel="tag"># HTML</a>
           
-            <a href="/tags/逻辑运算符/" rel="tag"># 逻辑运算符</a>
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
           
         </div>
       
@@ -535,8 +548,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/15/HTML-CSS基础之定位/" rel="next" title="HTML&CSS基础之定位">
-                <i class="fa fa-chevron-left"></i> HTML&CSS基础之定位
+              <a href="/2019/05/23/Vue之v-if和v-show的使用/" rel="next" title="Vue之v-if和v-show的使用">
+                <i class="fa fa-chevron-left"></i> Vue之v-if和v-show的使用
               </a>
             
           </div>
@@ -544,6 +557,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" rel="prev" title="JS基础之逻辑运运算符“||”和“&&”">
+                JS基础之逻辑运运算符“||”和“&&” <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -696,7 +713,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#一、“-”（逻辑或）"><span class="nav-number">1.</span> <span class="nav-text">一、“||”（逻辑或）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；"><span class="nav-number">2.</span> <span class="nav-text">1、只要 ||前面为false，不管||后面是true还是false，都返回||后 面的值；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值。"><span class="nav-number">3.</span> <span class="nav-text">2、只要 ||前面为true，不管||后面是true还是false，都返回||前 面的值。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#二、”-amp-amp-“（逻辑与）"><span class="nav-number">4.</span> <span class="nav-text">二、”&amp;&amp;“（逻辑与）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1、只要-amp-amp-前面是false，无论后面是true还是false，结果都将返回前-面的值；"><span class="nav-number">5.</span> <span class="nav-text">1、只要&amp;&amp;前面是false，无论后面是true还是false，结果都将返回前 面的值；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、只要-amp-amp-前面是true，无论后面是true还是false，结果都将返回后-面的值；"><span class="nav-number">6.</span> <span class="nav-text">2、只要&amp;&amp;前面是true，无论后面是true还是false，结果都将返回后 面的值；</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#文档流"><span class="nav-number">1.</span> <span class="nav-text">文档流</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#position属性介绍"><span class="nav-number">2.</span> <span class="nav-text">position属性介绍</span></a></li></ol></div>
             
 
           </div>
