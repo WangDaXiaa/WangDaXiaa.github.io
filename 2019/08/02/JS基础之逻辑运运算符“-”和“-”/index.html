@@ -130,7 +130,7 @@
 <meta property="og:site_name" content="Wang DaXia&#39;s Essays">
 <meta property="og:description" content="本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;amp;&amp;amp;”（逻辑与）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-02T07:28:14.891Z">
+<meta property="og:updated_time" content="2019-08-02T08:18:04.456Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS基础之逻辑运运算符“||”和“&amp;&amp;”">
 <meta name="twitter:description" content="本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;amp;&amp;amp;”（逻辑与）">
@@ -399,7 +399,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  357
+                  667
                 </span>
               
 
@@ -415,7 +415,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -438,7 +438,7 @@
       
         <p> 本次要说的是逻辑运算符里面的“||”（逻辑或）和“&amp;&amp;”（逻辑与）</p>
 <a id="more"></a>
-<h5 id="“-”（逻辑或）"><a href="#“-”（逻辑或）" class="headerlink" title="“||”（逻辑或）"></a>“||”（逻辑或）</h5><p>从字面上来说，逻辑或只有在前后都是<code>false</code>的时候才返回<code>false</code>，否则返回<code>true</code>，如下：</p>
+<h5 id="一、“-”（逻辑或）"><a href="#一、“-”（逻辑或）" class="headerlink" title="一、“||”（逻辑或）"></a>一、“||”（逻辑或）</h5><p>从字面上来说，逻辑或只有在前后都是<code>false</code>的时候才返回<code>false</code>，否则返回<code>true</code>，如下：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.<span class="built_in">log</span>(<span class="literal">true</span> || <span class="literal">false</span>);   <span class="comment">//true</span></span><br><span class="line">console.<span class="built_in">log</span>(<span class="literal">false</span> || <span class="literal">true</span>);   <span class="comment">//true</span></span><br><span class="line">console.<span class="built_in">log</span>(<span class="literal">true</span> || <span class="literal">true</span>);    <span class="comment">//true</span></span><br><span class="line">console.<span class="built_in">log</span>(<span class="literal">false</span> || <span class="literal">false</span>);   <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
 <p>但是，从深层意义上来说的话，却有另一番天地，看下面的代码：</p>
 <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log( <span class="number">0</span> || <span class="number">1</span>);    <span class="comment">//   1</span></span><br></pre></td></tr></table></figure>
@@ -449,7 +449,15 @@
 <p>同样的，前面<code>a</code>是<code>true</code>，后面<code>1</code>也是<code>true</code>，结果是<code>&#39;a&#39;</code>，接着看如下代码：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">console.log( <span class="string">''</span> <span class="params">||</span> <span class="number">1</span> ); <span class="regexp">//</span>前面<span class="string">''</span>为<span class="literal">false</span>，后面<span class="number">1</span>位<span class="literal">true</span>，返回结果为<span class="number">1</span></span><br><span class="line">console.log( <span class="string">'a'</span> <span class="params">||</span> <span class="number">0</span>); <span class="regexp">//</span>前面<span class="string">'a'</span>为<span class="literal">true</span>，后面<span class="number">0</span>位<span class="literal">false</span>，返回结果为<span class="string">'a'</span></span><br><span class="line">console.log( <span class="string">'a'</span> <span class="params">||</span> <span class="string">'b'</span>); <span class="regexp">//</span>前面<span class="string">'a'</span>为<span class="literal">true</span>，后面<span class="string">'b'</span>为<span class="literal">true</span>，返回结果为<span class="string">'a'</span></span><br><span class="line">console.log( <span class="string">''</span> <span class="params">||</span> <span class="number">0</span>); <span class="regexp">//</span>前面<span class="string">''</span>为<span class="literal">false</span>，后面<span class="number">0</span>为<span class="literal">false</span>，返回结果为<span class="number">0</span></span><br><span class="line">console.log( <span class="number">0</span> <span class="params">||</span> <span class="string">''</span>); <span class="regexp">//</span>前面<span class="number">0</span>为<span class="literal">false</span>，后面<span class="string">''</span>为<span class="literal">false</span>，返回结果为<span class="string">''</span></span><br></pre></td></tr></table></figure>
 <p>由此可知：</p>
-<h5 id="1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；"><a href="#1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；" class="headerlink" title="1、只要 ||前面为false，不管||后面是true还是false，都返回||后 面的值；"></a>1、只要 <code>||</code>前面为<code>false</code>，不管<code>||</code>后面是<code>true</code>还是<code>false</code>，都返回<code>||</code><strong><em>后</em></strong> 面的值；</h5><h5 id="2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值；"><a href="#2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值；" class="headerlink" title="2、只要 ||前面为true，不管||后面是true还是false，都返回||前 面的值；"></a>2、只要 <code>||</code>前面为<code>true</code>，不管<code>||</code>后面是<code>true</code>还是<code>false</code>，都返回<code>||</code><em>前</em> 面的值；</h5>
+<h5 id="1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；"><a href="#1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；" class="headerlink" title="1、只要 ||前面为false，不管||后面是true还是false，都返回||后 面的值；"></a>1、只要 <code>||</code>前面为<code>false</code>，不管<code>||</code>后面是<code>true</code>还是<code>false</code>，都返回<code>||</code><strong><em>后</em></strong> 面的值；</h5><h5 id="2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值。"><a href="#2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值。" class="headerlink" title="2、只要 ||前面为true，不管||后面是true还是false，都返回||前 面的值。"></a>2、只要 <code>||</code>前面为<code>true</code>，不管<code>||</code>后面是<code>true</code>还是<code>false</code>，都返回<code>||</code><em>前</em> 面的值。</h5><hr>
+<h5 id="二、”-amp-amp-“（逻辑与）"><a href="#二、”-amp-amp-“（逻辑与）" class="headerlink" title="二、”&amp;&amp;“（逻辑与）"></a>二、”&amp;&amp;“（逻辑与）</h5><p>从字面上来说，只有前后都是<code>true</code>的时候才返回<code>true</code>，否则返回<code>false</code>，如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">console.log(true</span> <span class="string">&amp;&amp;</span> <span class="literal">false</span><span class="string">);</span>  <span class="string">//</span> <span class="literal">false</span></span><br><span class="line"><span class="string">console.log(true</span> <span class="string">&amp;&amp;</span> <span class="literal">true</span><span class="string">);</span>  <span class="string">//</span> <span class="literal">true</span></span><br><span class="line"><span class="string">console.log(false</span> <span class="string">&amp;&amp;</span> <span class="literal">false</span><span class="string">);</span>  <span class="string">//</span> <span class="literal">false</span></span><br><span class="line"><span class="string">console.log(</span> <span class="literal">false</span> <span class="string">&amp;&amp;</span> <span class="literal">true</span> <span class="string">);</span>  <span class="string">//</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>然后，根据上面的经验，我们看看<code>&amp;&amp;</code>号前后，不单单是布尔类型的情况。如下：</p>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log( <span class="string">''</span> &amp;&amp; <span class="number">0</span> );  <span class="regexp">//</span>前面<span class="string">''</span>是<span class="literal">false</span>，后面<span class="number">1</span>是<span class="literal">true</span>，返回结果为<span class="string">''</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="string">''</span> &amp;&amp; <span class="number">0</span> );  <span class="regexp">//</span>前面<span class="string">''</span>是<span class="literal">false</span>，后面<span class="number">0</span>是<span class="literal">false</span>，返回结果为<span class="string">''</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="string">'a'</span> &amp;&amp; <span class="number">1</span> );  <span class="regexp">//</span>前面<span class="string">'a'</span><span class="literal">true</span>，后面<span class="number">1</span>是<span class="literal">true</span>，返回结果为<span class="number">1</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="string">'a'</span> &amp;&amp; <span class="number">0</span> );  <span class="regexp">//</span>前面<span class="string">'a'</span>是<span class="literal">true</span>,后面是<span class="number">0</span>是<span class="literal">false</span>，返回结果为<span class="number">0</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="string">'a'</span> &amp;&amp; <span class="string">''</span> );  <span class="regexp">//</span>前面<span class="string">'a'</span>是<span class="literal">true</span>,前面<span class="number">0</span>是<span class="literal">false</span>,返回结果为<span class="string">''</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="number">0</span> &amp;&amp; <span class="string">'a'</span> );  <span class="regexp">//</span>前面<span class="number">0</span>是<span class="literal">false</span>,后面是<span class="string">'a'</span>是<span class="literal">true</span>，返回结果为<span class="number">0</span></span><br><span class="line"><span class="built_in">console</span>.log( <span class="number">0</span> &amp;&amp; <span class="string">''</span> );  <span class="regexp">//</span>前面<span class="number">0</span>是<span class="literal">false</span>,前面<span class="number">0</span>是<span class="literal">false</span>,返回结果为<span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p>这意味着：</p>
+<h5 id="1、只要-amp-amp-前面是false，无论后面是true还是false，结果都将返回前-面的值；"><a href="#1、只要-amp-amp-前面是false，无论后面是true还是false，结果都将返回前-面的值；" class="headerlink" title="1、只要&amp;&amp;前面是false，无论后面是true还是false，结果都将返回前 面的值；"></a>1、只要<code>&amp;&amp;</code>前面是<code>false</code>，无论后面是<code>true</code>还是<code>false</code>，结果都将返回<em>前</em> 面的值；</h5><h5 id="2、只要-amp-amp-前面是true，无论后面是true还是false，结果都将返回后-面的值；"><a href="#2、只要-amp-amp-前面是true，无论后面是true还是false，结果都将返回后-面的值；" class="headerlink" title="2、只要&amp;&amp;前面是true，无论后面是true还是false，结果都将返回后 面的值；"></a>2、只要<code>&amp;&amp;</code>前面是<code>true</code>，无论后面是<code>true</code>还是<code>false</code>，结果都将返回<em>后</em> 面的值；</h5><p>本篇笔记到这里就结束了，谢谢阅读！</p>
+<p>参考：<a href="https://www.cnblogs.com/pigtail/archive/2012/03/09/2387486.html" target="_blank" rel="noopener">https://www.cnblogs.com/pigtail/archive/2012/03/09/2387486.html</a></p>
+
       
     </div>
     
@@ -468,7 +476,7 @@
   <p><span>本文标题:</span><a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/">JS基础之逻辑运运算符“||”和“&&”</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 汪大侠 的个人博客">汪大侠</a></p>
   <p><span>发布时间:</span>2019年08月02日 - 11:08</p>
-  <p><span>最后更新:</span>2019年08月02日 - 15:08</p>
+  <p><span>最后更新:</span>2019年08月02日 - 16:08</p>
   <p><span>原始链接:</span><a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" title="JS基础之逻辑运运算符“||”和“&&”">http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wangdaxiaa.github.io/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" aria-label="复制成功！"></i></span>
   </p>
@@ -688,7 +696,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#“-”（逻辑或）"><span class="nav-number">1.</span> <span class="nav-text">“||”（逻辑或）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；"><span class="nav-number">2.</span> <span class="nav-text">1、只要 ||前面为false，不管||后面是true还是false，都返回||后 面的值；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值；"><span class="nav-number">3.</span> <span class="nav-text">2、只要 ||前面为true，不管||后面是true还是false，都返回||前 面的值；</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#一、“-”（逻辑或）"><span class="nav-number">1.</span> <span class="nav-text">一、“||”（逻辑或）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1、只要-前面为false，不管-后面是true还是false，都返回-后-面的值；"><span class="nav-number">2.</span> <span class="nav-text">1、只要 ||前面为false，不管||后面是true还是false，都返回||后 面的值；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、只要-前面为true，不管-后面是true还是false，都返回-前-面的值。"><span class="nav-number">3.</span> <span class="nav-text">2、只要 ||前面为true，不管||后面是true还是false，都返回||前 面的值。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#二、”-amp-amp-“（逻辑与）"><span class="nav-number">4.</span> <span class="nav-text">二、”&amp;&amp;“（逻辑与）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1、只要-amp-amp-前面是false，无论后面是true还是false，结果都将返回前-面的值；"><span class="nav-number">5.</span> <span class="nav-text">1、只要&amp;&amp;前面是false，无论后面是true还是false，结果都将返回前 面的值；</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、只要-amp-amp-前面是true，无论后面是true还是false，结果都将返回后-面的值；"><span class="nav-number">6.</span> <span class="nav-text">2、只要&amp;&amp;前面是true，无论后面是true还是false，结果都将返回后 面的值；</span></a></li></ol></div>
             
 
           </div>
@@ -723,7 +731,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">5.4k</span>
+    <span title="Site words total count">5.7k</span>
   
 </div>
 
