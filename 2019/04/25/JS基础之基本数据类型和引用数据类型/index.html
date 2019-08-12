@@ -133,7 +133,7 @@
 <meta property="og:image" content="http://wangdaxiaa.github.io/2019/04/25/JS基础之基本数据类型和引用数据类型/1.png">
 <meta property="og:image" content="http://wangdaxiaa.github.io/2019/04/25/JS基础之基本数据类型和引用数据类型/2.png">
 <meta property="og:image" content="http://wangdaxiaa.github.io/2019/04/25/JS基础之基本数据类型和引用数据类型/3.png">
-<meta property="og:updated_time" content="2019-06-03T08:48:51.081Z">
+<meta property="og:updated_time" content="2019-08-12T02:50:18.095Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS基础之基本数据类型和引用数据类型">
 <meta name="twitter:description" content="JS有六种数据类型，我们可以把他们分为两类：基本数据类型和引用数据类,其中基本数据类型包括：String,Number,Boolean,Null,Undefined;引用数据类型包括：Object。 下面我们来看两段代码：12345var a = 123;var b = a;a++;console.log(a);   //124console.log(b);  //123">
@@ -403,7 +403,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  320
+                  321
                 </span>
               
 
@@ -443,7 +443,7 @@
         <p> JS有六种数据类型，我们可以把他们分为两类：基本数据类型和引用数据类,其中基本数据类型包括：String,Number,Boolean,Null,Undefined;引用数据类型包括：Object。</p>
 <h4 id="下面我们来看两段代码："><a href="#下面我们来看两段代码：" class="headerlink" title="下面我们来看两段代码："></a>下面我们来看两段代码：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">123</span>;</span><br><span class="line"><span class="keyword">var</span> b = a;</span><br><span class="line">a++;</span><br><span class="line"><span class="built_in">console</span>.log(a);   <span class="comment">//124</span></span><br><span class="line"><span class="built_in">console</span>.log(b);  <span class="comment">//123</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h5 id="上面这段代码定义了两个变量a和b，最后a的值和b的值是一样的"><a href="#上面这段代码定义了两个变量a和b，最后a的值和b的值是一样的" class="headerlink" title="上面这段代码定义了两个变量a和b，最后a的值和b的值是一样的"></a>上面这段代码定义了两个变量a和b，最后a的值和b的值是一样的</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">obj.name = <span class="string">"孙悟空"</span>;</span><br><span class="line"><span class="keyword">var</span> obj2 = obj;</span><br><span class="line">obj.name = <span class="string">"猪八戒"</span></span><br><span class="line"><span class="built_in">console</span>.log(obj.name);<span class="comment">//猪八戒</span></span><br><span class="line"><span class="built_in">console</span>.log(obj2.name);<span class="comment">//猪八戒</span></span><br></pre></td></tr></table></figure>
+<h5 id="上面这段代码定义了两个变量a和b，最后a的值和b的值是不一样的"><a href="#上面这段代码定义了两个变量a和b，最后a的值和b的值是不一样的" class="headerlink" title="上面这段代码定义了两个变量a和b，最后a的值和b的值是不一样的"></a>上面这段代码定义了两个变量a和b，最后a的值和b的值是不一样的</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">obj.name = <span class="string">"孙悟空"</span>;</span><br><span class="line"><span class="keyword">var</span> obj2 = obj;</span><br><span class="line">obj.name = <span class="string">"猪八戒"</span></span><br><span class="line"><span class="built_in">console</span>.log(obj.name);<span class="comment">//猪八戒</span></span><br><span class="line"><span class="built_in">console</span>.log(obj2.name);<span class="comment">//猪八戒</span></span><br></pre></td></tr></table></figure>
 <h5 id="为什么obj2-name的值变成了猪八戒呢？"><a href="#为什么obj2-name的值变成了猪八戒呢？" class="headerlink" title="为什么obj2.name的值变成了猪八戒呢？"></a>为什么obj2.name的值变成了猪八戒呢？</h5><p>首先JS中的变量都是保存到<strong>栈</strong>内存中的，基本数据类型的值直接在栈内存中存储，值与值之间是独立存在的，修改一个变量不会改变其他的变量；对象是保存到<strong>堆</strong>内存中的，每创建一个新的对象，就会在堆内存中开辟出一个新的内存空间。而变量保存的是对象的内存地址（对象的引用），如果两个变量保存的是同一个对象引用，当一个通过一个变量修改属性时，另一个也会受到影响。</p>
 <hr>
 <h6 id="接下来我用两张图来解释一下"><a href="#接下来我用两张图来解释一下" class="headerlink" title="接下来我用两张图来解释一下"></a>接下来我用两张图来解释一下</h6><img src="/2019/04/25/JS基础之基本数据类型和引用数据类型/1.png">
@@ -468,7 +468,7 @@
   <p><span>本文标题:</span><a href="/2019/04/25/JS基础之基本数据类型和引用数据类型/">JS基础之基本数据类型和引用数据类型</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 汪大侠 的个人博客">汪大侠</a></p>
   <p><span>发布时间:</span>2019年04月25日 - 14:04</p>
-  <p><span>最后更新:</span>2019年06月03日 - 16:06</p>
+  <p><span>最后更新:</span>2019年08月12日 - 10:08</p>
   <p><span>原始链接:</span><a href="/2019/04/25/JS基础之基本数据类型和引用数据类型/" title="JS基础之基本数据类型和引用数据类型">http://wangdaxiaa.github.io/2019/04/25/JS基础之基本数据类型和引用数据类型/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wangdaxiaa.github.io/2019/04/25/JS基础之基本数据类型和引用数据类型/" aria-label="复制成功！"></i></span>
   </p>
@@ -694,7 +694,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#下面我们来看两段代码："><span class="nav-number">1.</span> <span class="nav-text">下面我们来看两段代码：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#上面这段代码定义了两个变量a和b，最后a的值和b的值是一样的"><span class="nav-number">1.1.</span> <span class="nav-text">上面这段代码定义了两个变量a和b，最后a的值和b的值是一样的</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#为什么obj2-name的值变成了猪八戒呢？"><span class="nav-number">1.2.</span> <span class="nav-text">为什么obj2.name的值变成了猪八戒呢？</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#接下来我用两张图来解释一下"><span class="nav-number">1.2.1.</span> <span class="nav-text">接下来我用两张图来解释一下</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#下面我们来看两段代码："><span class="nav-number">1.</span> <span class="nav-text">下面我们来看两段代码：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#上面这段代码定义了两个变量a和b，最后a的值和b的值是不一样的"><span class="nav-number">1.1.</span> <span class="nav-text">上面这段代码定义了两个变量a和b，最后a的值和b的值是不一样的</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#为什么obj2-name的值变成了猪八戒呢？"><span class="nav-number">1.2.</span> <span class="nav-text">为什么obj2.name的值变成了猪八戒呢？</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#接下来我用两张图来解释一下"><span class="nav-number">1.2.1.</span> <span class="nav-text">接下来我用两张图来解释一下</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -729,7 +729,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">7.1k</span>
+    <span title="Site words total count">7.2k</span>
   
 </div>
 
