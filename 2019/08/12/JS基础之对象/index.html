@@ -109,7 +109,7 @@
 
 
 
-  <meta name="keywords" content="HTML,CSS,定位,">
+  <meta name="keywords" content="JavaScript,对象,">
 
 
 
@@ -122,18 +122,18 @@
 
 
 
-<meta name="description" content="本篇文章要说的是关于定位属性的具体理解，在介绍定位之前，有必要先了解下文档流。">
-<meta name="keywords" content="HTML,CSS,定位">
+<meta name="description" content="先来说下JavaScript中的数据类型：String（字符串），Number（数值），Boolean（布尔值），Null（空值），Undefined(未定义)，以上者五种类型属于基本数据类型，以后我们看到的值只要不是以上5种，那么全都是对象Object。">
+<meta name="keywords" content="JavaScript,对象">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML&amp;CSS基础之定位">
-<meta property="og:url" content="http://wangdaxiaa.github.io/2019/07/15/HTML-CSS基础之定位/index.html">
+<meta property="og:title" content="JS基础之对象">
+<meta property="og:url" content="http://wangdaxiaa.github.io/2019/08/12/JS基础之对象/index.html">
 <meta property="og:site_name" content="Wang DaXia&#39;s Essays">
-<meta property="og:description" content="本篇文章要说的是关于定位属性的具体理解，在介绍定位之前，有必要先了解下文档流。">
+<meta property="og:description" content="先来说下JavaScript中的数据类型：String（字符串），Number（数值），Boolean（布尔值），Null（空值），Undefined(未定义)，以上者五种类型属于基本数据类型，以后我们看到的值只要不是以上5种，那么全都是对象Object。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-05T01:52:05.196Z">
+<meta property="og:updated_time" content="2019-08-13T01:54:32.114Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HTML&amp;CSS基础之定位">
-<meta name="twitter:description" content="本篇文章要说的是关于定位属性的具体理解，在介绍定位之前，有必要先了解下文档流。">
+<meta name="twitter:title" content="JS基础之对象">
+<meta name="twitter:description" content="先来说下JavaScript中的数据类型：String（字符串），Number（数值），Boolean（布尔值），Null（空值），Undefined(未定义)，以上者五种类型属于基本数据类型，以后我们看到的值只要不是以上5种，那么全都是对象Object。">
 
 
 
@@ -163,13 +163,13 @@
 
 
 
-  <link rel="canonical" href="http://wangdaxiaa.github.io/2019/07/15/HTML-CSS基础之定位/">
+  <link rel="canonical" href="http://wangdaxiaa.github.io/2019/08/12/JS基础之对象/">
 
 
 
 
 
-  <title>HTML&CSS基础之定位 | Wang DaXia's Essays</title>
+  <title>JS基础之对象 | Wang DaXia's Essays</title>
   
 
 
@@ -306,7 +306,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wangdaxiaa.github.io/2019/07/15/HTML-CSS基础之定位/">
+    <link itemprop="mainEntityOfPage" href="http://wangdaxiaa.github.io/2019/08/12/JS基础之对象/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="汪大侠">
@@ -323,7 +323,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">HTML&CSS基础之定位</h2>
+          <h2 class="post-title" itemprop="name headline">JS基础之对象</h2>
         
 
         <div class="post-meta">
@@ -335,8 +335,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-15T17:10:22+08:00">
-                2019-07-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-12T16:17:53+08:00">
+                2019-08-12
               </time>
             
 
@@ -358,8 +358,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML-CSS基础/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML&CSS基础</span>
+                  <a href="/categories/JS基础/" itemprop="url" rel="index">
+                    <span itemprop="name">JS基础</span>
                   </a>
                 </span>
 
@@ -376,8 +376,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/07/15/HTML-CSS基础之定位/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/15/HTML-CSS基础之定位/" itemprop="commentCount"></span>
+                <a href="/2019/08/12/JS基础之对象/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/12/JS基础之对象/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -399,7 +399,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  812
+                  909
                 </span>
               
 
@@ -415,7 +415,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -436,41 +436,38 @@
       
 
       
-        <p>本篇文章要说的是关于定位属性的具体理解，在介绍定位之前，有必要先了解下文档流。</p>
+        <p>先来说下JavaScript中的数据类型：<code>String（字符串）</code>，<code>Number（数值）</code>，<code>Boolean（布尔值）</code>，<code>Null（空值）</code>，<code>Undefined(未定义)</code>，以上者五种类型属于基本数据类型，以后我们看到的值只要不是以上5种，那么全都是<strong>对象<code>Object</code>。</strong></p>
 <a id="more"></a>
-<h5 id="文档流"><a href="#文档流" class="headerlink" title="文档流"></a>文档流</h5><p>文档流，简单来说就是元素按照其在HTML中的位置顺序决定排布的过程。HTML的布局机制就是用文档流模型的，即块元素（block）独占一行，内联元素（inline）不独占一行，内联元素的元素本身有多大，他就占多大。</p>
-<p>一般使用<code>margin</code>来隔开元素与元素之间的间距，<code>padding</code>是用来隔开元素与内容的间隔。<code>margin</code>用于布局分开元素使元素与元素互不相干；<code>padding</code>用于元素与内容之间的间隔，让内容（文字）与元素（包裹）之间有一段“距离”。</p>
-<p>只要不是float和绝对定位方式布局的，都在文档流里面。</p>
-<h5 id="position属性介绍"><a href="#position属性介绍" class="headerlink" title="position属性介绍"></a>position属性介绍</h5><p>position（定位）：定位指的就是将指定的元素摆放到页面的任意位置，通过定位可以摆放元素</p>
-<p>​        <code>position</code>的可选值有：</p>
-<p>​        ——<code>static</code>：默认值，元素没有开启定位</p>
-<p>​        ——<code>relative</code>：相对定位</p>
-<p>​        ——<code>absolute</code>：绝对定位</p>
-<p>​        ——<code>fixed</code>：固定定位（绝对定位的一种）</p>
-<p><strong>相对定位</strong></p>
-<p>当元素的<code>position</code>属性设置为<code>relative</code>时，则开启了元素的相对定位</p>
-<p>1、当开启了元素的相对定位以后，而不设置偏移量时，元素不会发生任何变化</p>
-<p>​      当开启了元素的定位（<code>position</code>是一个非<code>static</code>的值）时，可以通过<code>left right top bottom</code>来设置元素的偏移量</p>
-<p>2、相对定位是相对于元素在文档流中原来的位置进行定位</p>
-<p>3、相对定位的元素不会脱离文档流</p>
-<p>4、相对定位会使元素提高一个层级</p>
-<p>5、相对定位不会改变元素的性质，块元素还是块元素，内联元素还是内联元素</p>
-<hr>
-<p><strong>绝对定位</strong></p>
-<p>当元素的<code>position</code>属性设置为<code>absolute</code>时，则开启了元素的绝对定位</p>
-<p>1、开启绝对定位，会使元素脱离文档流</p>
-<p>2、开启绝对定位以后，如果不设置偏移量，则元素的位置不会发生变化</p>
-<p>3、绝对定位是相对于离他最近的开启了定位的祖先元素进行定位的，如果所有祖先元素都没有开启定位，则相对于浏览器窗口定位（一般情况下，开启了子元素的绝对定位都会同时开启父元素的相对定位）</p>
-<p>4、绝对定位会使元素提升一个层级</p>
-<p>5、绝对定位会改变元素的性质：内联元素变成块元素，块元素的宽度和高度默认都被内容撑开</p>
-<hr>
-<p><strong>固定定位</strong></p>
-<p>当元素的<code>position</code>属性设置为<code>fixed</code>时，则开启了元素的固定定位，固定定位也是一种绝对定位，它的大部分特点都和绝对定位一样</p>
-<p>不同的是：</p>
-<p>1、固定定位永远都会相对于浏览器窗口定位</p>
-<p>2、固定定位会固定在浏览器窗口某个位置，不会随滚动条滚动</p>
-<p>注意：IE6不支持固定定位</p>
-<p>本文到此结束，谢谢大家~</p>
+<p><strong>对象</strong>属于一种复合的数据类型，在对象中可以保存多个不同数据类型的属性，而基本数据类型都是单一的值，值和值之间没有任何联系。</p>
+<h4 id="对象的分类"><a href="#对象的分类" class="headerlink" title="对象的分类"></a>对象的分类</h4><p>1、内建对象：由ES标准中定义的对象，在任何的ES的实现中都可以使用，比如<code>Math，String，     Number……</code>；</p>
+<p>2、宿主对象：由JS的运行环境提供的对象，目前来讲主要指浏览器提供的对象，比如<code>BOM，DOM</code>；</p>
+<p>3、自定义对象：由开发人员自己创建的对象。</p>
+<h4 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h4><h5 id="1、使用构造函数创建对象"><a href="#1、使用构造函数创建对象" class="headerlink" title="1、使用构造函数创建对象"></a>1、使用构造函数创建对象</h5><pre><code>var obj = new Object();
+</code></pre><p>使用<code>new</code>关键字调用的函数，是构造函数<code>constructor</code>，构造函数是专门用来补创建对象的函数，使用<code>typeof</code>检查一个对象时，会返回<code>object</code>。</p>
+<p>在对象中保存的值称为属性，向对象<em><code>添加</code></em> 属性：</p>
+<p>​        语法：<code>对象 . 属性名 = 属性值；</code></p>
+<p><em><code>删除</code></em> 对象的属性：</p>
+<p>​        语法：<code>delete 对象 . 属性名</code></p>
+<p><strong>属性名</strong>：如果要使用特殊的属性名，不能采用<code>.</code>的方式来操作，需要使用另一种方式：<code>对象[&quot;属性名&quot;] = 属性值</code>，如下</p>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">obj[<span class="string">"123"</span>] = <span class="number">789</span>;</span><br><span class="line">console.<span class="built_in">log</span>(obj[<span class="string">"123"</span>]);   <span class="comment">//789</span></span><br></pre></td></tr></table></figure>
+<p><strong>属性值</strong>：JS对象的属性朱，可以是任意的数据类型，也可以是对象，如下</p>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">obj.test1 = <span class="literal">true</span>;</span><br><span class="line">obj.text2 = <span class="literal">undefined</span>;</span><br><span class="line"><span class="built_in">console</span>.log(obj.test1);   <span class="regexp">//</span><span class="literal">true</span></span><br><span class="line"><span class="built_in">console</span>.log(obj.test2);   <span class="regexp">//</span><span class="literal">undefined</span></span><br></pre></td></tr></table></figure>
+<p><strong>in 运算符</strong>：用过该运算符可以检查一个对象中是否含有指定的属性，如果有则返回<code>true</code>，没有则返回<code>false</code>，语法：</p>
+<pre><code>&quot;属性名&quot; in 对象
+</code></pre><h5 id="2、使用对象字面量来创建一个对象"><a href="#2、使用对象字面量来创建一个对象" class="headerlink" title="2、使用对象字面量来创建一个对象"></a>2、使用对象字面量来创建一个对象</h5><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">var obj</span> = &#123;&#125;;</span><br></pre></td></tr></table></figure>
+<p>使用对象字面量可以在创建对象时，直接指定对象中的属性，语法：<code>{属性名：属性值，属性名：属性值……}</code>，如下：</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var obj2 = &#123;</span><br><span class="line"><span class="symbol">    name:</span> <span class="string">"猪八戒"</span>，</span><br><span class="line"><span class="symbol">    age:</span> <span class="number">18</span>,</span><br><span class="line"><span class="symbol">    gender:</span> <span class="string">"男"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对象字面量的属性名可以加引号也可以不加，建议不加；如果要使用一些特殊的名字，则必须加引号。属性名和属性值是一组一组的名值对结构，名和值之间使用<code>：</code>链接，多个名值对之间用<code>，</code>隔开，最后一个名值对不加逗号。</p>
+<h5 id="3、函数"><a href="#3、函数" class="headerlink" title="3、函数"></a>3、函数</h5><p>函数也是一个对象，函数中可以封装一些功能（代码），在需要时可以执行这些功能（代码）；函数中可以保存一些代码在需要的时候调用。</p>
+<p>如何创建一个函数：</p>
+<h6 id="①-创建一个函数对象：var-fun-new-Function"><a href="#①-创建一个函数对象：var-fun-new-Function" class="headerlink" title="①  创建一个函数对象：var fun = new Function();"></a>①  创建一个函数对象：<code>var fun = new Function();</code></h6><p>封装到函数中的代码不会立即执行；</p>
+<p>函数中的代码会在函数调用的时候执行；</p>
+<p>调用函数的语法：<code>函数对象();</code>；</p>
+<p>当调用函数时，函数中封装的代码会按照顺序执行。</p>
+<h6 id="②-使用函数声明来创建一个函数"><a href="#②-使用函数声明来创建一个函数" class="headerlink" title="②  使用函数声明来创建一个函数"></a>②  使用函数声明来创建一个函数</h6><p>语法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 函数名 (<span class="params">[形参<span class="number">1</span>，形参<span class="number">2</span>，形参<span class="number">3</span>……]</span>)</span>&#123;</span><br><span class="line">    语句……</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="③-使用函数表达式来创建一个函数"><a href="#③-使用函数表达式来创建一个函数" class="headerlink" title="③  使用函数表达式来创建一个函数"></a>③  使用函数表达式来创建一个函数</h6><p>语法：</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> 函数名 = <span class="function"><span class="keyword">function</span><span class="params">([形参1，形参2，形参3……])</span></span>&#123;</span><br><span class="line">    语句……</span><br><span class="line">&#125;；</span><br><span class="line"><span class="comment">//  最后的大括号后面打了分号的原因是：</span></span><br><span class="line"><span class="comment">//  这个函数先是创建了一个匿名函数，把这个匿名函数赋值给了一个变量，从本质上来说这是一个赋值语句，所以要打分号</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -487,12 +484,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/07/15/HTML-CSS基础之定位/">HTML&CSS基础之定位</a></p>
+  <p><span>本文标题:</span><a href="/2019/08/12/JS基础之对象/">JS基础之对象</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 汪大侠 的个人博客">汪大侠</a></p>
-  <p><span>发布时间:</span>2019年07月15日 - 17:07</p>
-  <p><span>最后更新:</span>2019年08月05日 - 09:08</p>
-  <p><span>原始链接:</span><a href="/2019/07/15/HTML-CSS基础之定位/" title="HTML&CSS基础之定位">http://wangdaxiaa.github.io/2019/07/15/HTML-CSS基础之定位/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wangdaxiaa.github.io/2019/07/15/HTML-CSS基础之定位/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年08月12日 - 16:08</p>
+  <p><span>最后更新:</span>2019年08月13日 - 09:08</p>
+  <p><span>原始链接:</span><a href="/2019/08/12/JS基础之对象/" title="JS基础之对象">http://wangdaxiaa.github.io/2019/08/12/JS基础之对象/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://wangdaxiaa.github.io/2019/08/12/JS基础之对象/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -534,11 +531,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/HTML/" rel="tag"># HTML</a>
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
-            <a href="/tags/CSS/" rel="tag"># CSS</a>
-          
-            <a href="/tags/定位/" rel="tag"># 定位</a>
+            <a href="/tags/对象/" rel="tag"># 对象</a>
           
         </div>
       
@@ -551,8 +546,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/17/HTML-CSS基础之高度塌陷问题/" rel="next" title="HTML&CSS基础之高度塌陷问题">
-                <i class="fa fa-chevron-left"></i> HTML&CSS基础之高度塌陷问题
+              <a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" rel="next" title="JS基础之逻辑运运算符“||”和“&&”">
+                <i class="fa fa-chevron-left"></i> JS基础之逻辑运运算符“||”和“&&”
               </a>
             
           </div>
@@ -560,10 +555,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/02/JS基础之逻辑运运算符“-”和“-”/" rel="prev" title="JS基础之逻辑运运算符“||”和“&&”">
-                JS基础之逻辑运运算符“||”和“&&” <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -716,7 +707,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#文档流"><span class="nav-number">1.</span> <span class="nav-text">文档流</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#position属性介绍"><span class="nav-number">2.</span> <span class="nav-text">position属性介绍</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#对象的分类"><span class="nav-number">1.</span> <span class="nav-text">对象的分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建对象"><span class="nav-number">2.</span> <span class="nav-text">创建对象</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、使用构造函数创建对象"><span class="nav-number">2.1.</span> <span class="nav-text">1、使用构造函数创建对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、使用对象字面量来创建一个对象"><span class="nav-number">2.2.</span> <span class="nav-text">2、使用对象字面量来创建一个对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、函数"><span class="nav-number">2.3.</span> <span class="nav-text">3、函数</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#①-创建一个函数对象：var-fun-new-Function"><span class="nav-number">2.3.1.</span> <span class="nav-text">①  创建一个函数对象：var fun = new Function();</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#②-使用函数声明来创建一个函数"><span class="nav-number">2.3.2.</span> <span class="nav-text">②  使用函数声明来创建一个函数</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#③-使用函数表达式来创建一个函数"><span class="nav-number">2.3.3.</span> <span class="nav-text">③  使用函数表达式来创建一个函数</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
