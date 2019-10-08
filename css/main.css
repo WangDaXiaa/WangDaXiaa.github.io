@@ -1874,7 +1874,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c6d166;
+  background: #a2ff52;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3092,48 +3092,6 @@ body {
 }
 footer {
   color: #eee;
-}
-.main-inner {
-  background: #fff;
-  opacity: 0.9;
-}
-.header-inner {
-  background: rgba(255,255,255,0.91);
-  opacity: 1;
-}
-.site-meta {
-  background: #f76730;
-}
-.site-title {
-  display: inline-block;
-  vertical-align: top;
-  line-height: 36px;
-  font-size: 45px;
-  font-weight: normal;
-  font-family: 'Lato', "PingFang SC", "FZShuTi", sans-serif;
-  color: #000;
-}
-.site-subtitle {
-  margin-top: 10px;
-  font-size: 17px;
-  color: #000;
-  font-family: 'Lato', "PingFang SC", "STXingkai", sans-serif;
-}
-.menu .menu-item a:hover,
-.menu-item-active a {
-  background: rgba(255,255,255,0.522);
-  border-bottom-color: rgba(220,209,209,0.588);
-}
-.menu-item-active a:after {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  margin-top: -3px;
-  right: 15px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #484848;
 }
 .post {
   margin-top: 60px;
