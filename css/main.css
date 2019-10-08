@@ -1874,7 +1874,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6e3cb0;
+  background: #ac612e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3115,10 +3115,6 @@ footer {
 }
 .wobbleTransparentLine {
   border-color: rgba(0,0,0,0) !important;
-}
-#header,
-#footer {
-  background-color: #f5f5f5;
 }
 #sidebar,
 header {
